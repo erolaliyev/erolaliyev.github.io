@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 80%;
+  border: 1px solid rebeccapurple;
+  margin: 0 auto;
+  height: 3em;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 0 1em;
+  color: 
+}
+
+#about {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border: 1px solid chartreuse;
+  width: 80%;
+  margin: 0 auto;
+  height: 50%;
+}
+
+#profile-photo {
+  /* margin: 0 auto; */
+  /* border: 1px solid aqua; */
+  max-width: 65%;
+  max-height: 65%;
+  /* height: auto; */
+  border-radius: 50%;
+  margin: 1em 0;
+  /* display: block; */
+}
