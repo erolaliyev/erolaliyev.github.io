@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     height: 100%;
+    background-color: white;
 }
 
 nav {
@@ -112,4 +113,8 @@ nav {
 
 #contact {
 
+}
+
+:root {
+  background-color: lightcoral;
 }
