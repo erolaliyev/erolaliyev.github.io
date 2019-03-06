@@ -1,81 +1,142 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shorcut icon" href="./images/favicon.ico" />
+    <title>Erol Aliyev</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shorcut icon" href="./images/favicon.ico">
-  <title>Erol Aliyev</title>
-</head>
-
-<body>
-  <nav>
-    <a href="#about" class="nav-link">About</a>
-    <a href="#projects" class="nav-link">Projects</a>
-    <a href="https://medium.com/erol-aliyevs-blog" class="nav-link">Blog</a>
-    <a href="#contact" class="nav-link">Contact</a>
-  </nav>
-  <div id="about">
-    <img src="./images/Erol.jpg" alt="Erol, looking to the camera with that usual silly face" id="about-photo">
-    <p id="about-title">Erol Aliyev</p>
-    <p id="about-subtitle">Full Stack Web Developer</p>
-    <p id="about-text">I am a computer science student and aspiring full stack developer. I love to work with JavaScript and React.js. My skillset also includes Node.js, Redux, webpack, Git/Github, Sass and Bootstrap.</p>
-  </div>
-  <div id="projects">
-    <p>Projects</p>
-    <hr>
-    <div id="project-links">
-      <a href="https://erol-fcc-wikipedia-viewer.surge.sh/" class="project-link" target="_blank">
-        <img src="./images/wikipedia-viewer.png" alt="Wikipedia Viewer Project">
-        <p>Wikipedia Viewer</p>
-      </a>
-      <a href="https://erol-fcc-weather-app.surge.sh/" class="project-link" target="_blank">
-        <img src="./images/weather-app.png" alt="Weather App Project">
-        <p>Weather App</p>
-      </a>
-      <a href="https://erol-fcc-product-landing-page.surge.sh/" class="project-link" target="_blank">
-        <img src="./images/product-landing-page.png" alt="Product Landing Page Project">
-        <p>Product Landing Page</p>
-      </a>
-      <a href="https://erol-fcc-technical-documentation-page.surge.sh/" class="project-link" target="_blank">
-        <img src="./images/technical-documentation-page.png" alt="Technical Documentation Page Project">
-        <p>Technical Documentation Page</p>
-      </a>
-      <a href="https://erol-fcc-survey-form.surge.sh/" class="project-link" target="_blank">
-        <img src="./images/survey-form.png" alt="Survey Form Project">
-        <p>Survey Form</p>
-      </a>
-      <a href="https://erol-fcc-tribute-page.surge.sh/" class="project-link" target="_blank">
-        <img src="./images/tribute-page.png" alt="Tribute Page Project">
-        <p>Tribute Page</p>
-      </a>
+  <body>
+    <div id="mobile-menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
     </div>
-  </div>
-  <div id="contact">
-    <p>Contact</p>
-    <hr>
-    <div id="contact-links">
-      <a href="https://github.com/erolaliyev" target="_blank">
-        <i class="fab fa-github fa-lg"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/erolaliyev/" target="_blank">
-        <i class="fab fa-linkedin-in fa-lg"></i>
-      </a>
-      <a href="mailto:aliyeverol98@gmail.com" target="_blank">
-        <i class="fas fa-envelope fa-lg"></i>
-      </a>
-      <a href="https://twitter.com/erol_aliyev" target="_blank">
-        <i class="fab fa-twitter fa-lg"></i>
-      </a>
-      <a href="https://unsplash.com/@erolaliyev" target="_blank">
-        <i class="fas fa-camera fa-lg"></i>
-      </a>
+    <nav>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="https://medium.com/erol-aliyevs-blog" class="nav-link">Blog</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div id="about">
+      <img
+        src="./images/Erol.jpg"
+        alt="Erol, looking to the camera with that usual silly face"
+        id="about-photo"
+      />
+      <p id="about-title">Erol Aliyev</p>
+      <p id="about-subtitle">Full Stack Web Developer</p>
+      <p id="about-text">
+        I am a computer science student and aspiring full stack developer. I
+        love to work with JavaScript and React.js. My skillset also includes
+        Node.js, Redux, webpack, Git/Github, Sass and Bootstrap.
+      </p>
     </div>
-  </div>
-</body>
+    <div id="projects">
+      <p>Projects</p>
+      <hr />
+      <div id="project-links">
+        <a
+          href="https://erol-fcc-wikipedia-viewer.surge.sh/"
+          class="project-link"
+          target="_blank"
+        >
+          <img
+            src="./images/wikipedia-viewer.png"
+            alt="Wikipedia Viewer Project"
+          />
+          <p>Wikipedia Viewer</p>
+        </a>
+        <a
+          href="https://erol-fcc-weather-app.surge.sh/"
+          class="project-link"
+          target="_blank"
+        >
+          <img src="./images/weather-app.png" alt="Weather App Project" />
+          <p>Weather App</p>
+        </a>
+        <a
+          href="https://erol-fcc-product-landing-page.surge.sh/"
+          class="project-link"
+          target="_blank"
+        >
+          <img
+            src="./images/product-landing-page.png"
+            alt="Product Landing Page Project"
+          />
+          <p>Product Landing Page</p>
+        </a>
+        <a
+          href="https://erol-fcc-technical-documentation-page.surge.sh/"
+          class="project-link"
+          target="_blank"
+        >
+          <img
+            src="./images/technical-documentation-page.png"
+            alt="Technical Documentation Page Project"
+          />
+          <p>Technical Documentation Page</p>
+        </a>
+        <a
+          href="https://erol-fcc-survey-form.surge.sh/"
+          class="project-link"
+          target="_blank"
+        >
+          <img src="./images/survey-form.png" alt="Survey Form Project" />
+          <p>Survey Form</p>
+        </a>
+        <a
+          href="https://erol-fcc-tribute-page.surge.sh/"
+          class="project-link"
+          target="_blank"
+        >
+          <img src="./images/tribute-page.png" alt="Tribute Page Project" />
+          <p>Tribute Page</p>
+        </a>
+      </div>
+    </div>
+    <div id="contact">
+      <p>Contact</p>
+      <hr />
+      <div id="contact-links">
+        <a href="https://github.com/erolaliyev" target="_blank">
+          <i class="fab fa-github fa-lg"></i>
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/erolaliyev/" target="_blank">
+          <i class="fab fa-linkedin-in fa-lg"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:aliyeverol98@gmail.com" target="_blank">
+          <i class="fas fa-envelope fa-lg"></i>
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://twitter.com/erol_aliyev" target="_blank">
+          <i class="fab fa-twitter fa-lg"></i>
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://unsplash.com/@erolaliyev" target="_blank">
+          <i class="fas fa-camera fa-lg"></i>
+          <i class="fas fa-camera"></i>
+        </a>
+      </div>
+    </div>
+  </body>
 
+  <script src="./main.js"></script>
 </html>
