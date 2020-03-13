@@ -142,7 +142,7 @@ i:not(.fa-lg) {
   display: none;
 }
 
-/* Light theme */
+/* Themes */
 
 .light-theme {
   background-color: #d3dadf;
@@ -157,8 +157,6 @@ i:not(.fa-lg) {
     rgba(0, 0, 0, 0)
   );
 }
-
-/* Dark theme */
 
 .dark-theme {
   background-color: #232b32;
