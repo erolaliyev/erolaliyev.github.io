@@ -19,15 +19,27 @@ for (i = 0; i < navLink.length; i++) {
 
 // Dark theme
 
-const button = document.getElementById('toggle');
+const checkbox = document.querySelector('input[type=checkbox]');
 const body = document.getElementsByTagName('body')[0];
 const hr = document.getElementsByTagName('hr');
 
-// button.addEventListener('click', function() {
-//   body[0].classList.toggle('dark-theme');
-//   hr[0].classList.toggle('dark-theme');
-//   hr[1].classList.toggle('dark-theme');
-// });
+const saveToLocalStorage = (key, value) => {
+  let now = new Date();
+  now = now.getTime();
+  localStorage.setItem(key, value);
+  localStorage.setItem(key + '-last-change', now);
+};
+
+checkbox.addEventListener('change', function() {
+  if (body.classList[0] === 'dark-theme') {
+    enableTheme('light');
+    saveToLocalStorage('preference-theme', 'light');
+  } else {
+    enableTheme('dark');
+    saveToLocalStorage('preference-theme', 'dark');
+  }
+  console.log('change');
+});
 
 const enableTheme = color => {
   if (color === 'light' && body.classList[0] !== 'light-theme') {
@@ -44,7 +56,8 @@ const enableTheme = color => {
     hr[0].classList.add('hr-dark');
     hr[1].classList.remove('hr-light');
     hr[1].classList.add('hr-dark');
-  } else console.log(color);
+  }
+  console.log(color);
 };
 
 const listenToOSChanges = () => {
@@ -78,7 +91,7 @@ const returnThemeBasedOnOS = () => {
 const returnThemeBasedOnTime = () => {
   let date = new Date();
   const hour = date.getHours();
-  if (hour > 20 || hour < 5) return 'dark';
+  if (hour > 19 || hour < 5) return 'dark';
 };
 
 (function initializeTheme() {
