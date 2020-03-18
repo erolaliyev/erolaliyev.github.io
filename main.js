@@ -49,6 +49,7 @@ const enableTheme = color => {
     hr[0].classList.add('hr-light');
     hr[1].classList.remove('hr-dark');
     hr[1].classList.add('hr-light');
+    checkbox.checked = false;
   } else if (color === 'dark' && body.classList[0] !== 'dark-theme') {
     body.classList.remove('light-theme');
     body.classList.add('dark-theme');
@@ -56,6 +57,7 @@ const enableTheme = color => {
     hr[0].classList.add('hr-dark');
     hr[1].classList.remove('hr-light');
     hr[1].classList.add('hr-dark');
+    checkbox.checked = true;
   }
   console.log(color);
 };
