@@ -30,17 +30,107 @@ hr {
 nav {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   height: 3em;
   margin: 0 auto;
   width: 80%;
+  padding: 0 1rem;
+}
+
+/* Switch */
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-label {
+  display: block;
+  width: 48px;
+  height: 24px;
+  text-indent: -150%;
+  clip: rect(0 0 0 0);
+  border-radius: 12px;
+  user-select: none;
+  background-color: #000;
+}
+
+.switch-label::before,
+.switch-label::after {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  content: '';
+}
+.switch-label::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999em;
+}
+.switch-label::after {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  -webkit-transition: left 0.25s ease;
+  transition: left 0.25s ease;
+  background-color: #d3dadf;
+}
+
+.switch-input:checked + .switch-label::after {
+  left: 24px;
+}
+
+.switch-icons {
+  width: 48px;
+  height: 24px;
+  display: flex;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.switch-icons::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f186';
+  color: yellow;
+  margin-left: 58%;
+  margin-top: 8%;
+}
+
+.switch-icons::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f185';
+  color: yellow;
+  margin-left: 18%;
+  margin-top: 8%;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .nav-link {
   margin: 0 1em;
   padding: 0.3em 0.5em;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .nav-link:hover {
@@ -210,13 +300,21 @@ i:not(.fa-lg) {
     display: none;
   }
 
+  .switch {
+    margin-top: 0.8rem;
+  }
+
+  .nav-links {
+    flex-flow: column nowrap;
+  }
+
   .nav-link {
     margin-top: 0.2em;
   }
 
   .nav-menu {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     align-items: flex-start;
     height: auto;
     margin: 0;
@@ -312,90 +410,4 @@ i:not(.fa-lg) {
   i:not(.fa-lg) {
     display: inline-block;
   }
-}
-
-/* Switch */
-nav {
-  border: 1px solid red;
-}
-
-.icon::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-}
-
-.switch-input {
-  display: none;
-}
-
-.switch-label {
-  display: block;
-  width: 48px;
-  height: 24px;
-  text-indent: -150%;
-  clip: rect(0 0 0 0);
-  border-radius: 12px;
-  user-select: none;
-  background-color: #000;
-}
-
-.switch-label::before,
-.switch-label::after {
-  display: block;
-  position: absolute;
-  cursor: pointer;
-  content: '';
-}
-.switch-label::before {
-  width: 100%;
-  height: 100%;
-  border-radius: 9999em;
-}
-.switch-label::after {
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  -webkit-transition: left 0.25s ease;
-  transition: left 0.25s ease;
-  background-color: #dedede;
-}
-
-.switch-input:checked + .switch-label::after {
-  left: 24px;
-}
-
-.switch-icons {
-  width: 48px;
-  height: 24px;
-  display: flex;
-  border-radius: 12px;
-  background-color: transparent;
-}
-
-.switch-icons::before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f186';
-  color: yellow;
-  margin-left: 58%;
-  margin-top: 8%;
-}
-
-.switch-icons::after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f185';
-  color: yellow;
-  margin-left: 18%;
-  margin-top: 8%;
 }
