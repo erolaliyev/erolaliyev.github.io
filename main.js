@@ -93,7 +93,7 @@ const returnThemeBasedOnOS = () => {
 const returnThemeBasedOnTime = () => {
   let date = new Date();
   const hour = date.getHours();
-  if (hour > 19 || hour < 5) return 'dark';
+  if (hour > 20 || hour < 5) return 'dark';
 };
 
 (function initializeTheme() {

@@ -20,6 +20,13 @@ a {
   color: inherit;
 }
 
+i:hover {
+  color: #00bfff;
+  transform: scale(1.4);
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
 hr {
   width: 15%;
   margin: 0.4em auto;
@@ -197,10 +204,11 @@ nav {
   height: 150px;
   margin: 2em 1em;
   width: 320px;
+  position: relative;
 }
 
 .project-link > p {
-  margin-top: 0.5em;
+  margin-top: 0.8rem;
 }
 
 .project-link > img {
