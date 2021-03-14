@@ -172,12 +172,14 @@ nav {
 
 #about-subtitle {
   font-size: 2.4rem;
+  margin-bottom: 0.3rem;
 }
 
 #about-text {
   margin: 0 auto;
   text-align: center;
   width: 50%;
+  line-height: 2.2rem;
 }
 
 #projects {
